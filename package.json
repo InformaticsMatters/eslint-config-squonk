@@ -1,6 +1,6 @@
 {
   "name": "@squonk/eslint-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ESLint config used by Squonk front-end apps",
   "main": "index.js",
   "repository": {
@@ -55,8 +55,12 @@
       "tag": true,
       "push": true
     },
+    "github": {
+      "release": true
+    },
     "npm": {
-      "publish": true
+      "publish": true,
+      ""
     }
   }
 }
