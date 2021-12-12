@@ -1,0 +1,16 @@
+{
+  "include": [
+    "**/*",
+    "**/.*"
+  ],
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "target": "ES5",
+    "module": "commonjs",
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "esModuleInterop": true
+  }
+}
