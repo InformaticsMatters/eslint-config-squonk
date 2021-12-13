@@ -13,7 +13,7 @@ pnpm dlx install-peerdeps -P --dev @squonk/eslint-config
 
 This uses `pnpm` (`-P`) to install the peer dependencies from this package as dev dependencies.
 
-2. Create (or modify) a `.eslintrc.js` file with the following:
+2. Create (or modify) a `.eslintrc.js` (or `.eslintrc.js` if your `package.json` is to `"type": "module"`) file with the following:
 
 ```js
 module.exports = {
@@ -21,18 +21,18 @@ module.exports = {
     project: 'tsconfig.json',
     tsconfigRootDir: __dirname,
   },
-  extends: [
-    "@squonk/eslint-config"
-  ]
-}
+  extends: ['@squonk/eslint-config'],
+};
 ```
 
-3. You will need to ensure your `tsconfig.json` `includes` the `.eslintrc.js` file to prevent an error. Ensure it has the following entry to format dotfiles too:
+3. You will need to ensure your `tsconfig.json` `includes` the all files you wish to be linted to prevent errors. Ensure it has the following entry to format dotfiles too:
 
 ```json
 "include": [
     ...,
-    "**/.*.js",
+    "**/.*.js", // Possibly not needed if you have `"type": "module"`
+    "**/.*.cjs", // Required if using `"type": "module"`
+    // etc.
   ]
 ```
 
