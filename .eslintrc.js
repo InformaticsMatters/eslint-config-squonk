@@ -10,6 +10,7 @@ module.exports = {
     'simple-import-sort',
     'react-hooks',
     'unused-imports',
+    'import',
   ],
   extends: [
     'eslint:recommended',
