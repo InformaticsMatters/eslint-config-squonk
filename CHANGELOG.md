@@ -1,3 +1,7 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 ## 0.2.0 (2021-12-13)
 
 
@@ -11,4 +15,3 @@
 
 * **deps:** Remove unnecessary packages from peer dependencies ([2fb2bc2](https://github.com/InformaticsMatters/eslint-config-squonk/commit/2fb2bc24dfb172c53263575e7b7a994750cbaef7))
 * Fix package.json error ([04f47c7](https://github.com/InformaticsMatters/eslint-config-squonk/commit/04f47c7d8b15d360cff3e98a36f159412aca50e8))
-
