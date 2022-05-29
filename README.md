@@ -36,4 +36,15 @@ module.exports = {
   ]
 ```
 
+## Development
+
+### Release a new version
+
+Use `standard-version` via
+
+```sh
+pnpm dlx standard-version -t "''"
+git push --follow-tags origin main
+```
+
 <!-- TODO: Add: ### Examples  -->
