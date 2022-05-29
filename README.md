@@ -45,6 +45,8 @@ Use `standard-version` via
 ```sh
 pnpm dlx standard-version -t "''"
 git push --follow-tags origin main
+
+pnpm publish
 ```
 
 <!-- TODO: Add: ### Examples  -->
