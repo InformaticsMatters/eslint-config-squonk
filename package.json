@@ -16,23 +16,21 @@
   "homepage": "https://github.com/InformaticsMatters/eslint-config-squonk#readme",
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint --fix",
-    "release": "release-it"
+    "lint:fix": "eslint --fix"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^3.3.0",
     "@types/node": "^16.11.12",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "prettier": "^2.5.1",
-    "release-it": "^14.11.8",
     "typescript": "^4.5.3"
   },
   "peerDependencies": {
@@ -46,25 +44,5 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "prettier": "^2.5.1"
-  },
-  "release-it": {
-    "git": {
-      "commit": true,
-      "commitMessage": "chore: release v${version}",
-      "tag": true,
-      "push": true
-    },
-    "github": {
-      "release": true
-    },
-    "npm": {
-      "publish": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "conventionalcommits",
-        "infile": "CHANGELOG.md"
-      }
-    }
   }
 }

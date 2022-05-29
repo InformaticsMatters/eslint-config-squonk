@@ -106,5 +106,6 @@ module.exports = {
         argsIgnorePattern: '^_',
       },
     ],
+    'import/no-duplicates': 'warn',
   },
 };
