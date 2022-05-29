@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/InformaticsMatters/eslint-config-squonk/compare/0.2.0...0.3.0) (2022-05-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add import/no-duplicates rule
+
+### Features
+
+* Add import/no-duplicates rule ([9d57f9f](https://github.com/InformaticsMatters/eslint-config-squonk/commit/9d57f9fb727cb2596911fe4e990df1bec279abeb))
+
 ## 0.2.0 (2021-12-13)
 
 
