@@ -32,9 +32,9 @@ module.exports = {
     "object-shorthand": "warn",
     "no-else-return": "warn",
     "react/jsx-no-useless-fragment": "warn",
-    "react/react-in-jsx-scope": "warn",
-    "react/display-name": "warn",
-    "react/prop-types": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/display-name": "off",
+    "react/prop-types": "off",
     "react/jsx-sort-props": [
       "warn",
       {
@@ -46,22 +46,22 @@ module.exports = {
         reservedFirst: false,
       },
     ],
-    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/rules-of-hooks": "warn",
     "react-hooks/exhaustive-deps": "warn",
-    "@typescript-eslint/explicit-function-return-type": "warn",
-    "@typescript-eslint/explicit-module-boundary-types": "warn",
-    "@typescript-eslint/explicit-member-accessibility": "warn",
-    "@typescript-eslint/indent": 0,
-    "@typescript-eslint/member-delimiter-style": "warn",
-    "@typescript-eslint/no-explicit-any": "warn",
-    "@typescript-eslint/no-var-requires": "warn",
-    "@typescript-eslint/no-use-before-define": "warn",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/consistent-type-imports": "warn",
     "@typescript-eslint/no-unnecessary-condition": "warn",
     "@typescript-eslint/no-unnecessary-type-assertion": "warn",
     "@typescript-eslint/no-unnecessary-type-constraint": "warn",
-    "@typescript-eslint/no-unused-vars": "warn",
-    "no-console": "warn",
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-console": "off",
     "prettier/prettier": [
       "warn",
       {
@@ -75,7 +75,7 @@ module.exports = {
       },
     ],
     "simple-import-sort/imports": [
-      "error",
+      "warn",
       {
         groups: [
           [
@@ -96,8 +96,8 @@ module.exports = {
         ],
       },
     ],
-    "simple-import-sort/exports": "error",
-    "unused-imports/no-unused-imports": "error",
+    "simple-import-sort/exports": "warn",
+    "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": [
       "warn",
       {
