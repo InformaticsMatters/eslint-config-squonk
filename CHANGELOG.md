@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.2](https://github.com/InformaticsMatters/eslint-config-squonk/compare/0.4.1...0.4.2) (2022-05-30)
+
+
+### Bug Fixes
+
+* **eslint:** Fix quotes in config ([9d6c165](https://github.com/InformaticsMatters/eslint-config-squonk/commit/9d6c165bb09d21d2c127e9c428312d93e6934d54))
+
 ### [0.4.1](https://github.com/InformaticsMatters/eslint-config-squonk/compare/0.4.0...0.4.1) (2022-05-30)
 
 
