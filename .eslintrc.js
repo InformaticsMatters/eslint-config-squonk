@@ -74,6 +74,7 @@ module.exports = {
         tabWidth: 2,
       },
     ],
+    quotes: ["warn", "double", { allowTemplateLiterals: true }],
     "simple-import-sort/imports": [
       "warn",
       {
