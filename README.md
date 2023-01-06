@@ -8,12 +8,10 @@ This assumes you are using `pnpm`.
 1. Install package + peer dependencies:
 
 ```sh
-pnpm dlx install-peerdeps -P --dev @squonk/eslint-config
+pnpm add -D eslint @squonk/eslint-config
 ```
 
-This uses `pnpm` (`-P`) to install the peer dependencies from this package as dev dependencies.
-
-2. Create (or modify) a `.eslintrc.js` (or `.eslintrc.js` if your `package.json` is to `"type": "module"`) file with the following:
+2. Create (or modify) a `.eslintrc.js` (or `.eslintrc.cjs` if your `package.json` is to `"type": "module"`) file with the following:
 
 ```js
 module.exports = {
