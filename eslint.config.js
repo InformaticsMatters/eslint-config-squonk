@@ -5,7 +5,7 @@ import js from "@eslint/js";
 import ts from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import eslintMdx from "eslint-mdx";
-import eslintImport from "eslint-plugin-import";
+import eslintImport from "eslint-plugin-i";
 import mdx from "eslint-plugin-mdx";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
@@ -14,8 +14,8 @@ import unusedImports from "eslint-plugin-unused-imports";
 import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
-// const __dirname = dirname(fileURLToPath(import.meta.url));
-const __dirname = "/home/oliver/codetemp/im/squonk-frontend/libs/eslint-config"
+const __dirname = dirname(fileURLToPath(import.meta.url));
+// const __dirname = "/home/oliver/codetemp/im/squonk-frontend/libs/eslint-config"
 
 const extensions = ["**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}"];
 
@@ -24,6 +24,8 @@ const tsParserOptions = {
   parserOptions: {
     project: "tsconfig.json",
     tsconfigRootDir: __dirname,
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
 };
 
@@ -283,7 +285,10 @@ export default [
     settings: {
       "import/parsers": {
         espree: [".js", ".cjs", ".mjs", ".jsx"],
-        "@typescript-eslint/parser": [".ts"],
+      },
+      "import/resolver": {
+        typescript: true,
+        node: true,
       },
     },
     rules: {
