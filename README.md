@@ -5,7 +5,7 @@ ESLint config used by Squonk front-end apps
 
 This assumes you are using `pnpm`.
 
-1. Install package + peer dependencies:
+1. Install package:
 
 ```sh
 pnpm add -D eslint @squonk/eslint-config
@@ -14,12 +14,15 @@ pnpm add -D eslint @squonk/eslint-config
 2. Create (or modify) a `.eslintrc.js` (or `.eslintrc.cjs` if your `package.json` is to `"type": "module"`) file with the following:
 
 ```js
+/**
+ * @type {import("eslint").Linter.Config}
+ */
 module.exports = {
   parserOptions: {
-    project: 'tsconfig.json',
+    project: "tsconfig.json",
     tsconfigRootDir: __dirname,
   },
-  extends: ['@squonk/eslint-config'],
+  extends: ["@squonk/eslint-config"],
 };
 ```
 
@@ -28,23 +31,12 @@ module.exports = {
 ```json
 "include": [
     ...,
-    "**/.*.js", // Possibly not needed if you have `"type": "module"`
-    "**/.*.cjs", // Required if using `"type": "module"`
-    // etc.
   ]
 ```
 
 ## Development
 
-### Release a new version
+Releasing a new version:
 
-Use `standard-version` via
-
-```sh
-pnpm dlx standard-version -t "''"
-git push --follow-tags origin main
-
-pnpm publish
-```
-
-<!-- TODO: Add: ### Examples  -->
+1. Merge the PR created by `release-please`
+2. From the repo run `pnpm publish`
