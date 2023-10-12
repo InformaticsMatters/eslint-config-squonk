@@ -1,6 +1,3 @@
-// This is a patch so that eslint will load the plugins as dependencies. Otherwise we can to install EVERYTHING in th root project
-require("@rushstack/eslint-patch/modern-module-resolution");
-
 module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -14,12 +11,15 @@ module.exports = {
     "react-hooks",
     "unused-imports",
     "import",
+    "@next/eslint-plugin-next"
   ],
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
+    "plugin:@next/next/recommended",
+    "plugin:@next/next/core-web-vitals"
   ],
   env: {
     es6: true,

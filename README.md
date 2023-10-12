@@ -34,6 +34,8 @@ module.exports = {
   ]
 ```
 
+4. Install peer dependencies or (preferred) set `--resolve--resolve-plugins-relative-to="path/to/@squonk/eslint-config"` (may be a monorepo or the node-modules folder)
+
 ## Development
 
 Releasing a new version:
