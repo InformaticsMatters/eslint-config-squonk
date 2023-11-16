@@ -16,11 +16,11 @@
     "dependencies"
   ],
   "constraints": {
-    "pnpm": "7"
+    "pnpm": "8"
   },
   "force": {
     "constraints": {
-      "pnpm": "7.15.0"
+      "pnpm": "8.10.5"
     }
   }
 }
