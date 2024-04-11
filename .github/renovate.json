@@ -20,7 +20,7 @@
   },
   "force": {
     "constraints": {
-      "pnpm": "8.10.5"
+      "pnpm": "8.15.4"
     }
   }
 }
