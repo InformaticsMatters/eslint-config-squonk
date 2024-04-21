@@ -12,7 +12,6 @@ const tsParserOptions = {
   parser: tseslint.parser,
   parserOptions: {
     project: true,
-    tsconfigRootDir: import.meta.dirname,
   },
 };
 
