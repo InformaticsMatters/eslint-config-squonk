@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v1.0.0...v2.0.0) (2024-04-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **flat-config:** migrate to flat config and update rules ([#2](https://github.com/InformaticsMatters/eslint-config-squonk/issues/2))
+
+### Features
+
+* **flat-config:** migrate to flat config and update rules ([#2](https://github.com/InformaticsMatters/eslint-config-squonk/issues/2)) ([94b6656](https://github.com/InformaticsMatters/eslint-config-squonk/commit/94b66566289618e3d63e2dcf5b3813597e9c7570))
+
 ## [1.0.0](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v0.4.2...v1.0.0) (2023-10-12)
 
 
