@@ -1,4 +1,5 @@
 # eslint-config-squonk
+
 ESLint config used by Squonk front-end apps
 
 ## Installation
@@ -11,28 +12,15 @@ This assumes you are using `pnpm`.
 pnpm add -D eslint @squonk/eslint-config
 ```
 
-2. Create (or modify) a `.eslintrc.js` (or `.eslintrc.cjs` if your `package.json` is to `"type": "module"`) file with the following:
+2. Create (or modify) a `eslint.config.js` for your _flat_ eslint config file and merge the configs you need for the project:
 
 ```js
-module.exports = {
-  parserOptions: {
-    project: 'tsconfig.json',
-    tsconfigRootDir: __dirname,
-  },
-  extends: ['@squonk/eslint-config'],
-};
+import config from "@squonk/eslint-config";
+
+export default config.map((c) => ({ ...c, ignores: ["**/dist/**"] }));
 ```
 
-3. You will need to ensure your `tsconfig.json` `includes` the all files you wish to be linted to prevent errors. Ensure it has the following entry to format dotfiles too:
-
-```json
-"include": [
-    ...,
-    "**/.*.js", // Possibly not needed if you have `"type": "module"`
-    "**/.*.cjs", // Required if using `"type": "module"`
-    // etc.
-  ]
-```
+Add any files and directories you wish to ignore since .eslintignore is removed for flat configs.
 
 ## Development
 
@@ -46,5 +34,3 @@ git push --follow-tags origin main
 
 pnpm publish
 ```
-
-<!-- TODO: Add: ### Examples  -->
