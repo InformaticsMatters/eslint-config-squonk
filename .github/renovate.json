@@ -1,0 +1,26 @@
+{
+  "dependencyDashboardAutoclose": true,
+  "extends": [
+    ":dependencyDashboard",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":ignoreModulesAndTests",
+    ":autodetectPinVersions",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all",
+    ":pinAllExceptPeerDependencies",
+    ":semanticCommitTypeAll(chore)",
+    ":disableRateLimiting"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "constraints": {
+    "pnpm": "8"
+  },
+  "force": {
+    "constraints": {
+      "pnpm": "8.15.4"
+    }
+  }
+}

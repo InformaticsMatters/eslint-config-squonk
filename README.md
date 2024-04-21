@@ -6,7 +6,7 @@ ESLint config used by Squonk front-end apps
 
 This assumes you are using `pnpm`.
 
-1. Install package + peer dependencies:
+1. Install package:
 
 ```sh
 pnpm add -D eslint @squonk/eslint-config
@@ -22,15 +22,11 @@ export default config.map((c) => ({ ...c, ignores: ["**/dist/**"] }));
 
 Add any files and directories you wish to ignore since .eslintignore is removed for flat configs.
 
+4. Install peer dependencies or (preferred) set `--resolve--resolve-plugins-relative-to="path/to/@squonk/eslint-config"` (may be a monorepo or the node-modules folder)
+
 ## Development
 
-### Release a new version
+Releasing a new version:
 
-Use `standard-version` via
-
-```sh
-pnpm dlx standard-version -t "''"
-git push --follow-tags origin main
-
-pnpm publish
-```
+1. Merge the PR created by `release-please`
+2. From the repo run `pnpm publish`
