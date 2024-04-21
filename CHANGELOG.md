@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.1](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v2.0.0...v2.0.1) (2024-04-21)
+
+
+### Bug Fixes
+
+* **deps:** pin deps ([0feedba](https://github.com/InformaticsMatters/eslint-config-squonk/commit/0feedba6a90a046bc6b058456608eeb7c74de7ad))
+
 ## [2.0.0](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v1.0.0...v2.0.0) (2024-04-21)
 
 
