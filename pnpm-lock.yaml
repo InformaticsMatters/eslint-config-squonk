@@ -24,8 +24,8 @@ dependencies:
     specifier: 3.1.5
     version: 3.1.5(eslint@8.57.0)
   eslint-plugin-import-x:
-    specifier: 0.5.0
-    version: 0.5.0(eslint@8.57.0)(typescript@5.2.2)
+    specifier: 0.5.3
+    version: 0.5.3(eslint@8.57.0)(typescript@5.2.2)
   eslint-plugin-mdx:
     specifier: 3.1.5
     version: 3.1.5(eslint@8.57.0)
@@ -1208,8 +1208,8 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-import-x@0.5.0(eslint@8.57.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-C7R8Z4IzxmsoOPMtSzwuOBW5FH6iRlxHR6iTks+MzVlrk3r3TUxokkWTx3ypdj9nGOEP+CG/5e6ebZzHbxgbbQ==}
+  /eslint-plugin-import-x@0.5.3(eslint@8.57.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-hJ/wkMcsLQXAZL3+txXIDpbW5cqwdm1rLTqV4VRY03aIbzE3zWE7rPZKW6Gzf7xyl1u3V1iYC6tOG77d9NF4GQ==}
     engines: {node: '>=16'}
     peerDependencies:
       eslint: ^8.56.0 || ^9.0.0-0
@@ -1223,6 +1223,8 @@ packages:
       is-glob: 4.0.3
       minimatch: 9.0.4
       semver: 7.6.0
+      stable-hash: 0.0.4
+      tslib: 2.6.2
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3193,6 +3195,10 @@ packages:
 
   /spdx-license-ids@3.0.17:
     resolution: {integrity: sha512-sh8PWc/ftMqAAdFiBu6Fy6JUOYjqDJBJvIhpfDMyHrr0Rbp5liZqd4TjtQ/RgfLjKFZb+LMx5hpml5qOWy0qvg==}
+    dev: false
+
+  /stable-hash@0.0.4:
+    resolution: {integrity: sha512-LjdcbuBeLcdETCrPn9i8AYAZ1eCtu4ECAWtP7UleOiZ9LzVxRzzUZEoZ8zB24nhkQnDWyET0I+3sWokSDS3E7g==}
     dev: false
 
   /string-width@4.2.3:
