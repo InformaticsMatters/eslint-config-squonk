@@ -4,7 +4,6 @@
     ":dependencyDashboard",
     ":semanticPrefixFixDepsChoreOthers",
     ":ignoreModulesAndTests",
-    ":autodetectPinVersions",
     "group:monorepos",
     "group:recommended",
     "workarounds:all",
@@ -16,11 +15,7 @@
     "dependencies"
   ],
   "constraints": {
-    "pnpm": "8"
+    "pnpm": "9"
   },
-  "force": {
-    "constraints": {
-      "pnpm": "8.15.4"
-    }
-  }
+  "packageRules": []
 }
