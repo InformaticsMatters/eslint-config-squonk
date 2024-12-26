@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.2](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v2.0.1...v2.0.2) (2024-12-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-react to v7.37.3 ([b6277c3](https://github.com/InformaticsMatters/eslint-config-squonk/commit/b6277c39687196860de86a707395d3c9f71574a2))
+* **deps:** update dependency typescript-eslint to v8 ([7a0abdf](https://github.com/InformaticsMatters/eslint-config-squonk/commit/7a0abdf8fab14a21fa9bbd5226ca7cd5b51eb927))
+
 ## [2.0.1](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v2.0.0...v2.0.1) (2024-04-21)
 
 
