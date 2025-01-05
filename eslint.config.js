@@ -1,5 +1,5 @@
 import js from "@eslint/js";
-import eslintImport from "eslint-plugin-import-x";
+import eslintImport, { rules } from "eslint-plugin-import-x";
 import * as mdx from "eslint-plugin-mdx";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
@@ -7,6 +7,7 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import unusedImports from "eslint-plugin-unused-imports";
 import tseslint from "typescript-eslint";
+import nextPlugin from "@next/eslint-plugin-next";
 
 const tsParserOptions = {
   parser: tseslint.parser,
@@ -125,7 +126,9 @@ const tsRules = {
   "@typescript-eslint/adjacent-overload-signatures": ["warn"],
   "@typescript-eslint/array-type": ["warn"],
   "@typescript-eslint/await-thenable": ["error"],
-  "@typescript-eslint/ban-types": ["warn"],
+  "@typescript-eslint/no-empty-object-type": ["warn"],
+  "@typescript-eslint/no-unsafe-function-type": ["warn"],
+  "@typescript-eslint/no-wrapper-object-types": ["warn"],
   "@typescript-eslint/consistent-generic-constructors": ["warn"],
   "@typescript-eslint/consistent-indexed-object-style": ["warn"],
   "@typescript-eslint/consistent-type-assertions": ["warn", { assertionStyle: "as" }],
@@ -169,7 +172,7 @@ const tsRules = {
   "@typescript-eslint/no-non-null-assertion": ["warn"],
   "@typescript-eslint/no-redeclare": ["off"], // handled by ts
   "@typescript-eslint/no-redundant-type-constituents": ["warn"],
-  "@typescript-eslint/no-throw-literal": ["warn"],
+  "@typescript-eslint/only-throw-error": ["warn"],
   "@typescript-eslint/no-unnecessary-boolean-literal-compare": ["warn"],
   "@typescript-eslint/no-unnecessary-condition": ["warn"],
   "@typescript-eslint/no-unnecessary-type-assertion": "warn",
@@ -417,6 +420,16 @@ export default [
     ...mdx.flatCodeBlocks,
     rules: {
       ...mdx.flatCodeBlocks.rules,
+    },
+  },
+  {
+    name: "next-js",
+    plugins: {
+      "@next/next": nextPlugin,
+    },
+    rules: {
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs["core-web-vitals"].rules,
     },
   },
 ];
