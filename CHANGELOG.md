@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v2.0.2...v2.1.0) (2025-01-05)
+
+
+### Features
+
+* add nextjs config ([203f173](https://github.com/InformaticsMatters/eslint-config-squonk/commit/203f173f0b2a984fd47a750a89b3ab84da826fd5))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v22 ([16c59a5](https://github.com/InformaticsMatters/eslint-config-squonk/commit/16c59a5dfb9dca6ba292f777d4010739b01156e1))
+* **deps:** update dependency eslint-plugin-import-x to v4 ([dc3bfac](https://github.com/InformaticsMatters/eslint-config-squonk/commit/dc3bfac6ccc2e7d0ec947b286e73cf706cc35c3c))
+* **deps:** update dependency eslint-plugin-react-hooks to v5 ([a21c0f3](https://github.com/InformaticsMatters/eslint-config-squonk/commit/a21c0f3256cc0468def33d414d40568677bac7b6))
+* **deps:** update dependency typescript to v5.7.2 ([4b2a21a](https://github.com/InformaticsMatters/eslint-config-squonk/commit/4b2a21a723197de66355c23527223b149b7671a6))
+
 ## [2.0.2](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v2.0.1...v2.0.2) (2024-12-26)
 
 
