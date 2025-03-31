@@ -1,6 +1,6 @@
 {
   "name": "@squonk/eslint-config",
-  "version": "2.2.0",
+  "version": "2.1.1",
   "description": "ESLint config used by Squonk front-end apps",
   "type": "module",
   "main": "index.js",
@@ -15,8 +15,7 @@
     "url": "https://github.com/InformaticsMatters/eslint-config-squonk/issues"
   },
   "homepage": "https://github.com/InformaticsMatters/eslint-config-squonk#readme",
-  "scripts": {
-  },
+  "scripts": {},
   "peerDependencies": {
     "eslint": "8",
     "typescript": ">=4.7"
