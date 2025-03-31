@@ -16,8 +16,6 @@
   },
   "homepage": "https://github.com/InformaticsMatters/eslint-config-squonk#readme",
   "scripts": {
-    "lint:all": "eslint .",
-    "format:all": "eslint --fix --cache ."
   },
   "peerDependencies": {
     "eslint": ">=8",
