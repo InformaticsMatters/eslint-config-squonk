@@ -1,6 +1,6 @@
 {
   "name": "@squonk/eslint-config",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "ESLint config used by Squonk front-end apps",
   "type": "module",
   "main": "index.js",
