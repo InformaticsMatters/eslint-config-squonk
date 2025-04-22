@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v2.1.0...v3.0.0) (2025-04-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade eslint to v9
+
+### Features
+
+* upgrade eslint to v9 ([56bc668](https://github.com/InformaticsMatters/eslint-config-squonk/commit/56bc668899c529c13454c6697dbf82f7f8e58735))
+
+
+### Bug Fixes
+
+* downgrade unicorn ([f9d98a7](https://github.com/InformaticsMatters/eslint-config-squonk/commit/f9d98a79d0602192ed4e73620b74b8b33d5a7ec5))
+* fix peer deps for eslint ([29f924f](https://github.com/InformaticsMatters/eslint-config-squonk/commit/29f924f628ad6a81204ea8debd54d25dbfb3bb24))
+
 ## [2.1.0](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v2.0.2...v2.1.0) (2025-01-05)
 
 
