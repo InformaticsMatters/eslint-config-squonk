@@ -1,5 +1,6 @@
 import js from "@eslint/js";
-import eslintImport, { rules } from "eslint-plugin-import-x";
+import nextPlugin from "@next/eslint-plugin-next";
+import eslintImport from "eslint-plugin-import-x";
 import * as mdx from "eslint-plugin-mdx";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
@@ -7,7 +8,6 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import unusedImports from "eslint-plugin-unused-imports";
 import tseslint from "typescript-eslint";
-import nextPlugin from "@next/eslint-plugin-next";
 
 const tsParserOptions = {
   parser: tseslint.parser,
@@ -65,6 +65,7 @@ const standardRules = {
   "object-shorthand": ["warn"],
   "no-with": ["error"],
   "no-var": ["warn"],
+  "no-useless-assignment": "warn",
   "no-useless-return": ["warn"],
   "no-useless-rename": ["warn"],
   "no-useless-escape": ["warn"],
@@ -232,16 +233,16 @@ const simpleImportSortRules = {
         ],
         // React comes first
         ["^react"],
-        ["^\\u0000"],
+        [String.raw`^\u0000`],
         // Internal packages.
         ["^(@squonk)(/.*|$)"],
-        ["^@?\\w"],
+        [String.raw`^@?\w`],
         // Side effect imports.
         // Parent imports. Put `..` last.
         // Other relative imports. Put same-folder imports and `.` last.
-        ["^\\.\\.(?!/?$)", "^\\.\\./?$", "^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+        [String.raw`^\.\.(?!/?$)`, String.raw`^\.\./?$`, String.raw`^\./(?=.*/)(?!/?$)`, String.raw`^\.(?!/?$)`, String.raw`^\./?$`],
         // Style imports.
-        ["^.+\\.s?css$"],
+        [String.raw`^.+\.s?css$`],
       ],
     },
   ],
