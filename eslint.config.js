@@ -240,7 +240,13 @@ const simpleImportSortRules = {
         // Side effect imports.
         // Parent imports. Put `..` last.
         // Other relative imports. Put same-folder imports and `.` last.
-        [String.raw`^\.\.(?!/?$)`, String.raw`^\.\./?$`, String.raw`^\./(?=.*/)(?!/?$)`, String.raw`^\.(?!/?$)`, String.raw`^\./?$`],
+        [
+          String.raw`^\.\.(?!/?$)`,
+          String.raw`^\.\./?$`,
+          String.raw`^\./(?=.*/)(?!/?$)`,
+          String.raw`^\.(?!/?$)`,
+          String.raw`^\./?$`,
+        ],
         // Style imports.
         [String.raw`^.+\.s?css$`],
       ],
@@ -374,13 +380,14 @@ export default [
   },
   {
     name: "unicorn-rules",
-    ...eslintPluginUnicorn.configs["flat/recommended"],
+    ...eslintPluginUnicorn.configs["recommended"],
     files: ["**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}"],
     rules: {
       ...Object.fromEntries(
-        Object.entries(eslintPluginUnicorn.configs["flat/recommended"].rules).map(
-          ([rule, value]) => [rule, value === "error" ? "warn" : value],
-        ),
+        Object.entries(eslintPluginUnicorn.configs["recommended"].rules).map(([rule, value]) => [
+          rule,
+          value === "error" ? "warn" : value,
+        ]),
       ),
       "unicorn/prevent-abbreviations": ["off"],
       "unicorn/filename-case": ["off"],
