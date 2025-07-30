@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.1](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v3.0.0...v3.0.1) (2025-07-30)
+
+
+### Bug Fixes
+
+* release 3.0.1 ([331044b](https://github.com/InformaticsMatters/eslint-config-squonk/commit/331044bcdbefae0e79f8d4dbc9ba14fe5ade539f))
+
 ## [3.0.0](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v2.1.0...v3.0.0) (2025-04-22)
 
 
