@@ -7,6 +7,12 @@ const config = {
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     ["@semantic-release/changelog", { changelogFile: "CHANGELOG.md" }],
+    [
+      "@semantic-release/exec",
+      {
+        prepareCmd: "pnpm install --no-frozen-lockfile",
+      },
+    ],
     ["@semantic-release/npm", { npmPublish: true, provenance: true }],
     [
       "@semantic-release/git",
