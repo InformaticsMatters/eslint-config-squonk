@@ -6,7 +6,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/InformaticsMatters/eslint-config-squonk.git"
+    "url": "git@github.com:InformaticsMatters/eslint-config-squonk.git"
   },
   "private": false,
   "author": "Informatics Matters",
