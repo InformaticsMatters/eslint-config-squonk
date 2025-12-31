@@ -1,12 +1,12 @@
 {
   "name": "@squonk/eslint-config",
-  "version": "3.0.1",
+  "version": "3.0.2-dev.1",
   "description": "ESLint config used by Squonk front-end apps",
   "type": "module",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/InformaticsMatters/eslint-config-squonk.git"
+    "url": "git@github.com:InformaticsMatters/eslint-config-squonk.git"
   },
   "private": false,
   "author": "Informatics Matters",
@@ -37,10 +37,6 @@
     "@semantic-release/exec": "7.1.0",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/commit-analyzer": "13.0.1",
-    "@semantic-release/github": "11.0.6",
-    "@semantic-release/npm": "12.0.2",
-    "@semantic-release/release-notes-generator": "14.1.0",
-    "semantic-release": "24.2.9"
+    "semantic-release": "25.0.2"
   }
 }
