@@ -37,6 +37,11 @@
       "description": "Use feat for minor updates",
       "matchUpdateTypes": ["major", "minor"],
       "semanticCommitType": "feat"
+    },
+    {
+      "description": "Use ci for GitHub Actions updates",
+      "matchFileNames": [".github/workflows/*"],
+      "semanticCommitType": "ci"
     }
   ]
 }
