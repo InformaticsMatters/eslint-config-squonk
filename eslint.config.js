@@ -12,7 +12,7 @@ import tseslint from "typescript-eslint";
 const tsParserOptions = {
   parser: tseslint.parser,
   parserOptions: {
-    project: true,
+    projectService: true,
   },
 };
 
