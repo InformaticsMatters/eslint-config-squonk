@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/InformaticsMatters/eslint-config-squonk/compare/3.0.3...3.0.4) (2025-12-31)
+
+
+### Bug Fixes
+
+* update tsParserOptions to use projectService instead of project ([fc6ab88](https://github.com/InformaticsMatters/eslint-config-squonk/commit/fc6ab88c017656d3d9e05fe321fb9b01c5bb5f1d))
+
 ## [3.0.3](https://github.com/InformaticsMatters/eslint-config-squonk/compare/3.0.2...3.0.3) (2025-12-31)
 
 
