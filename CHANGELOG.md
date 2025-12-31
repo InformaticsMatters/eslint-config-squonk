@@ -1,3 +1,12 @@
+## [3.0.2-dev.1](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v3.0.1...3.0.2-dev.1) (2025-12-31)
+
+
+### Bug Fixes
+
+* remove unused semantic release deps ([1a80d95](https://github.com/InformaticsMatters/eslint-config-squonk/commit/1a80d95d3173b5a3927702281ac836d280555bfe))
+* update repository URL format in package.json ([0622ebd](https://github.com/InformaticsMatters/eslint-config-squonk/commit/0622ebdbfad521e5b287276d572e0f47d8ef3d7a))
+* update semantic release configuration for npm publishing and tag format ([df392fa](https://github.com/InformaticsMatters/eslint-config-squonk/commit/df392fabb24e477ec163a31f351d227441fc72a9))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
