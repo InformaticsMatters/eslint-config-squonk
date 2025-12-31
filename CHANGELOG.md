@@ -1,3 +1,10 @@
+## [3.0.3-dev.1](https://github.com/InformaticsMatters/eslint-config-squonk/compare/3.0.2...3.0.3-dev.1) (2025-12-31)
+
+
+### Bug Fixes
+
+* update package rules to include major updates for semantic versioning ([9be3afd](https://github.com/InformaticsMatters/eslint-config-squonk/commit/9be3afd898d437f0cb5a030875c92aee7e98c9ff))
+
 ## [3.0.2](https://github.com/InformaticsMatters/eslint-config-squonk/compare/v3.0.1...3.0.2) (2025-12-31)
 
 

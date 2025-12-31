@@ -35,7 +35,7 @@
     },
     {
       "description": "Use feat for minor updates",
-      "matchUpdateTypes": ["minor"],
+      "matchUpdateTypes": ["major", "minor"],
       "semanticCommitType": "feat"
     }
   ]
