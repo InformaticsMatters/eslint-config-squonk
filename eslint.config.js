@@ -1,3 +1,4 @@
+import { fixupPluginRules } from "@eslint/compat";
 import js from "@eslint/js";
 import nextPlugin from "@next/eslint-plugin-next";
 import eslintImport from "eslint-plugin-import-x";
@@ -8,6 +9,8 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import unusedImports from "eslint-plugin-unused-imports";
 import tseslint from "typescript-eslint";
+
+const reactPlugin = fixupPluginRules(react);
 
 const tsParserOptions = {
   parser: tseslint.parser,
@@ -49,7 +52,7 @@ const standardRules = {
   "require-unicode-regexp": ["warn"],
   // "require-await": ["warn"], // handled by ts-eslint
   "require-atomic-updates": ["warn"],
-  radix: ["warn", "always"],
+  radix: ["warn"],
   // "prefer-template": ["warn"], // Too many refactors
   "prefer-spread": ["warn"],
   "prefer-rest-params": ["warn"],
@@ -268,8 +271,8 @@ const importXRules = {
 };
 
 const reactRules = {
-  ...react.configs.recommended.rules,
-  ...react.configs["jsx-runtime"].rules,
+  ...reactPlugin.configs.recommended.rules,
+  ...reactPlugin.configs["jsx-runtime"].rules,
   "react/prop-types": ["off"],
   "react/void-dom-elements-no-children": ["warn"], // Is this handled by prettier or something else?
   "react/style-prop-object": ["warn"], // is this done by typescript?
@@ -411,7 +414,7 @@ export default [
       ...tsParserOptions,
     },
     plugins: {
-      react,
+      react: reactPlugin,
       "react-hooks": reactHooks,
     },
     settings: {
