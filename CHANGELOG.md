@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/InformaticsMatters/eslint-config-squonk/compare/3.0.4...3.0.5) (2026-05-01)
+
+
+### Bug Fixes
+
+* update Node.js setup action to version 6 ([d4a30c3](https://github.com/InformaticsMatters/eslint-config-squonk/commit/d4a30c399872e69f0d6cbc3f8fcbb7a0ee9126fa))
+
 ## [3.0.4](https://github.com/InformaticsMatters/eslint-config-squonk/compare/3.0.3...3.0.4) (2025-12-31)
 
 
