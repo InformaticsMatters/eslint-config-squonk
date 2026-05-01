@@ -19,7 +19,7 @@
     "@eslint/eslintrc": "3.3.5",
     "@eslint/js": "9.39.2",
     "@next/eslint-plugin-next": "16.2.4",
-    "@types/node": "22.19.3",
+    "@types/node": "@types/node",
     "eslint": "9.39.2",
     "eslint-import-resolver-typescript": "4.4.4",
     "eslint-mdx": "3.7.0",
