@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/InformaticsMatters/eslint-config-squonk/compare/3.0.5...3.1.0) (2026-05-01)
+
+
+### Features
+
+* add @eslint/compat package and update react plugin integration ([afda212](https://github.com/InformaticsMatters/eslint-config-squonk/commit/afda212b50530f3ceceb633f444a4614c7991d60))
+
 ## [3.0.5](https://github.com/InformaticsMatters/eslint-config-squonk/compare/3.0.4...3.0.5) (2026-05-01)
 
 
