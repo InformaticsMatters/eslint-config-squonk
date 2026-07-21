@@ -16,7 +16,7 @@
     "dependencies"
   ],
   "constraints": {
-    "pnpm": "10"
+    "pnpm": "10.34.5"
   },
   "baseBranchPatterns": [
     "dev"
